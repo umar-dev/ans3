@@ -35,7 +35,6 @@ public class RegionsLanguage {
             countriesByRegionAsiaAndEurope = new ArrayList<>();
             countriesByRegionAsiaAndEurope.addAll(countriesByRegionEurope.get());
             countriesByRegionAsiaAndEurope.addAll(countriesByRegionAsia.get());
-            int a=1+2;
             EnglishSpeakingCountries.retainAll(countriesByRegionAsiaAndEurope.stream().map(Country::getName).collect(Collectors.toList()));
 
         } catch (Throwable e) {
